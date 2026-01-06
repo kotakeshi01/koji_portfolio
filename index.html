@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+
+    <section class="hero">
+        <h1>Rare Animal Showcase</h1>
+        <p>↓ スクロールしてください</p>
+    </section>
+
+    <section class="animal-section" id="section1">
+        <div class="animal-peek" id="trigger1">🐹</div>
+    </section>
+
+    <div class="modal-overlay" id="modal">
+        <div class="modal-content">
+            <button class="close-btn" id="close-btn">×</button>
+            <div class="video-wrapper">
+                <video id="main-video" playsinline muted loop>
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                </video>
+            </div>
+            <h2 id="m-title">名前</h2>
+            <p id="m-desc">説明文</p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
